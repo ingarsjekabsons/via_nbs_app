@@ -5,6 +5,14 @@
       <map>
         <entry key="app/src/main/res/layout/activity_auth_result_handler.xml" value="0.34057971014492755" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_stepper.xml" value="0.16847826086956522" />
+        <entry key="app/src/main/res/layout/step.xml" value="0.16530797101449277" />
+        <entry key="app/src/main/res/layout/step1.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/step2.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/step3.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/step4.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/stepper.xml" value="0.16847826086956522" />
+        <entry key="app/src/main/res/layout/stepperz.xml" value="0.16847826086956522" />
       </map>
     </option>
   </component>

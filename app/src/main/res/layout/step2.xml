@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/step2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/step2_diensestapakape"
+        android:layout_width="158dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien8" />
+
+    <TextView
+        android:id="@+id/step2_profdien8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Dienesta pakāpe"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_last" />
+
+    <TextView
+        android:id="@+id/step2_profdien9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Dienests citu valstu bruņotajos spēkos"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_diensestapakape" />
+
+    <TextView
+        android:id="@+id/step2_profdien7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Pēdējā dienesta vieta"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_dient" />
+
+    <EditText
+        android:id="@+id/step2_dient"
+        android:textSize="11sp"
+        android:layout_width="69dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:textSize="11sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/step2_dienf"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien6" />
+
+    <EditText
+        android:id="@+id/step2_dienf"
+        android:textSize="11sp"
+        android:layout_width="69dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien6" />
+
+    <TextView
+        android:id="@+id/step2_profdien6"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Obligātais militārais dienests (no gada, līdz gadam)"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_jaunt" />
+
+    <EditText
+        android:id="@+id/step2_jaunt"
+        android:textSize="11sp"
+        android:layout_width="69dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien5" />
+
+    <TextView
+        android:id="@+id/step2_profdien5"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:text="Jaunsarga apmācība (no gada, līdz gadam)"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_aizt" />
+
+    <EditText
+        android:id="@+id/step2_jaunf"
+        android:textSize="11sp"
+        android:layout_width="69dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/step2_jaunf"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien4" />
+
+    <EditText
+        android:id="@+id/step2_aizt"
+        android:textSize="11sp"
+        android:layout_width="69dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/step2_aizsf"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien4" />
+
+    <EditText
+        android:id="@+id/step2_aizsf"
+        android:textSize="11sp"
+        android:layout_width="69dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien4" />
+
+    <TextView
+        android:id="@+id/step2_profdien4"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Valsts aizsardzības mācība (no gada, līdz gadam)"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_rezt" />
+
+    <EditText
+        android:id="@+id/step2_rezt"
+        android:textSize="11sp"
+        android:layout_width="69dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien3" />
+
+    <EditText
+        android:id="@+id/step2_rezf"
+        android:textSize="11sp"
+        android:layout_width="69dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien3" />
+
+    <TextView
+        android:id="@+id/step2_profdien3"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Rezervista militārā apmācība (no gada, līdz gadam)"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_zemt" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/step2_rezf"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien3" />
+
+    <TextView
+        android:id="@+id/step2_profdien2"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Dienests zemessardzē (no gada, līdz gadam)"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_proft" />
+
+    <EditText
+        android:id="@+id/step2_zemt"
+        android:textSize="11sp"
+        android:layout_width="69dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien2"
+        tools:layout_editor_absoluteX="99dp" />
+
+    <EditText
+        android:id="@+id/step2_zemf"
+        android:textSize="11sp"
+        android:layout_width="69dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/step2_proff"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien2" />
+
+    <TextView
+        android:id="@+id/step2_profdien"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Profesionālais dienests (no gada, līdz gadam)"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/step2_proff"
+        android:textSize="11sp"
+        android:layout_width="69dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien" />
+
+    <EditText
+        android:id="@+id/step2_proft"
+        android:textSize="11sp"
+        android:layout_width="69dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/step2_proff"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien" />
+
+    <EditText
+        android:id="@+id/step2_last"
+        android:layout_width="158dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien7" />
+
+    <CheckBox
+        android:id="@+id/step2_foreign"
+        android:textSize="11sp"
+        android:layout_width="69dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:text="Jā, ir bijis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien9" />
+
+    <EditText
+        android:id="@+id/step2_foreignNBS"
+        android:layout_width="69dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/step2_foreign"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien9" />
+</androidx.constraintlayout.widget.ConstraintLayout>

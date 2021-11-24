@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/step3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/step2_profdien10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Dienests iekšlietu ministrijsas sistēmas iestādēs vai ieslodzījuma vietās"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step3_darba_pieredze" />
+
+    <EditText
+        android:id="@+id/step2_foreignNBS2"
+        android:layout_width="203dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/step2_foreign2"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien10" />
+
+    <CheckBox
+        android:id="@+id/step2_foreign2"
+        android:layout_width="69dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:text="Jā, ir bijis"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2_profdien10" />
+
+    <EditText
+        android:id="@+id/step3_darba_pieredze"
+        android:layout_width="189dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step1_vards5" />
+
+    <TextView
+        android:id="@+id/step1_vards5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Darba pieredze"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step3_spec" />
+
+    <EditText
+        android:id="@+id/step3_spec"
+        android:layout_width="189dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step1_vards4" />
+
+    <TextView
+        android:id="@+id/step1_vards4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Specialitāte"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step4_studprog" />
+
+    <EditText
+        android:id="@+id/step4_studprog"
+        android:layout_width="189dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step1_vards3" />
+
+    <TextView
+        android:id="@+id/step1_vards2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Izglītības līmenis"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/step1_vards3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Izglītības iestāde"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step3_izgl" />
+
+    <RadioGroup
+        android:id="@+id/step3_izgl"
+        android:layout_width="190dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step1_vards2">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="144dp"
+            android:layout_height="30dp"
+            android:text="Pamata"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="144dp"
+            android:layout_height="30dp"
+            android:text="Vidējā"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="144dp"
+            android:layout_height="30dp"
+            android:text="Vidējā profesionālā"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="144dp"
+            android:layout_height="30dp"
+            android:text="Augstākā (1. līmenis)"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="144dp"
+            android:layout_height="30dp"
+            android:text="Augstākā"
+            android:textSize="11sp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

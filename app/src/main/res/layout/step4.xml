@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/step4_cits"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/step3_izgl"
+        android:layout_width="232dp"
+        android:layout_height="206dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step1_vards4">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="www.mil.lv, www.naa.lv"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="No rekrutēšanas un atlases centra rekruteriem"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="247dp"
+            android:layout_height="30dp"
+            android:text="Latvijas Nacionālās aizsardzības akadēmijas Facebook, Instagram"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Citi Nacionālo bruņoto spēku sociālie mediji"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Radio"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton11"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="TV"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/step4_radio"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="Cits informācijas avots"
+            android:textSize="11sp" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/step2_foreign2"
+        android:layout_width="261dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Piekrītu sniegto datu apstrādei un izmantošanai NAcionālo bruņoto spēku vajadzībām, kā arī apliecinu atbilstību profesionālā dienesta uzsākšanas pamatnosacījumiem"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step4_studprog2" />
+
+    <TextView
+        android:id="@+id/step1_vards4"
+        android:layout_width="398dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Kur ieguvāt informāciju par iespējām studēt Latvijas Nacionālajā aizsardzības akadēmijā?"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step4_studprog" />
+
+    <EditText
+        android:id="@+id/step4_studprog"
+        android:layout_width="189dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step1_vards2" />
+
+    <EditText
+        android:id="@+id/step4_studprog2"
+        android:layout_width="189dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step3_izgl" />
+
+    <TextView
+        android:id="@+id/step1_vards2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Vēlamā studiju programma"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -66,6 +66,13 @@ public class MainActivity extends AppCompatActivity {
             doOIDConnect("https://www.facebok.com/");
         });
 
+        Button signUp = findViewById(R.id.signup);
+        signUp.setOnClickListener(v -> {
+            Intent intent = new Intent(this, StepperActivity.class);
+            startActivity(intent);
+        });
+        signUp.setEnabled(false);
+
 
         TextView welcome = findViewById(R.id.welcome);
 
@@ -86,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
                     signinFacebook.setVisibility(View.INVISIBLE);
 
                     logout.setEnabled(true);
+                    signUp.setEnabled(true);
 
                     Log.i(TAG, "Entering authorized state!");
                     String tkn = s.getIdToken();
@@ -143,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
                     AuthorizationRequest.Builder authReqBuilder =
                             new AuthorizationRequest.Builder(
                                     serviceConfiguration,
-                                    "CLIENTID-PLACEHOLDER",
+                                    "872861715936-24am6pdjo1j28tt1ru6vm4luugkm7vq7.apps.googleusercontent.com",
                                     ResponseTypeValues.CODE,
                                     Uri.parse("com.example.nbs:/oauth2")
                             ).setScope("openid email profile");
