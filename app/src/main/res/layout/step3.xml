@@ -19,7 +19,7 @@
         app:layout_constraintTop_toBottomOf="@+id/step3_darba_pieredze" />
 
     <EditText
-        android:id="@+id/step2_foreignNBS2"
+        android:id="@+id/step3_iekslietas"
         android:layout_width="203dp"
         android:layout_height="35dp"
         android:layout_marginStart="16dp"
@@ -27,16 +27,16 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="11sp"
-        app:layout_constraintStart_toEndOf="@+id/step2_foreign2"
+        app:layout_constraintStart_toEndOf="@+id/step3_checkbox"
         app:layout_constraintTop_toBottomOf="@+id/step2_profdien10" />
 
     <CheckBox
-        android:id="@+id/step2_foreign2"
+        android:id="@+id/step3_checkbox"
         android:layout_width="69dp"
         android:layout_height="33dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="2dp"
-        android:text="Jā, ir bijis"
+        android:text="Jā, ir bijusi"
         android:textSize="11sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/step2_profdien10" />
