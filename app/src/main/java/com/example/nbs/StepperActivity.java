@@ -16,6 +16,12 @@ import com.stepstone.stepper.VerificationError;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
 public class StepperActivity extends AppCompatActivity implements StepperLayout.StepperListener{
 
     private final String TAG = StepperActivity.class.getName();
@@ -41,6 +47,28 @@ public class StepperActivity extends AppCompatActivity implements StepperLayout.
                     .put("step3", sp.getString("step3_json", ""))
                     .put("step4", sp.getString("step4_json",""));
         } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            URL url = new URL("https://nbs-app.herokuapp.com/");
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestMethod("POST");
+            conn.setRequestProperty("Content-Type", "application/json");
+            conn.setRequestProperty("Accept","application/json");
+            conn.setDoOutput(true);
+            conn.setDoInput(true);
+            conn.connect();
+
+            DataOutputStream os = new DataOutputStream(conn.getOutputStream());
+            os.writeBytes(finalJson.toString());
+            os.flush();
+            os.close();
+
+            Log.i("STATUS", String.valueOf(conn.getResponseCode()));
+            Log.i("MSG" , conn.getResponseMessage());
+            conn.disconnect();
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
