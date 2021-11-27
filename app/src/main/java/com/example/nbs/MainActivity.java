@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
                     AuthorizationRequest.Builder authReqBuilder =
                             new AuthorizationRequest.Builder(
                                     serviceConfiguration,
-                                    "872861715936-24am6pdjo1j28tt1ru6vm4luugkm7vq7.apps.googleusercontent.com",
+                                    "<YOURCLIENTID>",
                                     ResponseTypeValues.CODE,
                                     Uri.parse("com.example.nbs:/oauth2")
                             ).setScope("openid email profile");
